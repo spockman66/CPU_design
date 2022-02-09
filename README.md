@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CPU_design
 
 ### 介绍
@@ -13,6 +14,3 @@ https://github.com/darklife/darkriscv
 
 https://opencores.org/websvn/listing/darkriscv/darkriscv
 
-### 使用说明
-
-git clone git@github.com:spockman66/CPU_design.git
