@@ -15,4 +15,4 @@ https://opencores.org/websvn/listing/darkriscv/darkriscv
 
 ### 使用说明
 
-git clone git@github.com:spockman66/CPU_design.git
+git clone git@gitee.com:wangtao0811/cpu_design.git
