@@ -1,0 +1,17 @@
+#=======================================================================
+# Makefrag for rv32uf tests
+#-----------------------------------------------------------------------
+
+rv32uf_sc_tests = \
+	fadd fdiv fclass fcmp fcvt fcvt_w fmadd fmin \
+	ldst move recoding \
+#`ifdef n100_cfg_has_ndse
+#`ifdef n100_cfg_fpu_single
+    hp_ldst \
+#`endif n100_cfg_fpu_single
+#`endif n100_cfg_has_ndse
+
+rv32uf_p_tests = $(addprefix rv32uf-p-, $(rv32uf_sc_tests))
+rv32uf_v_tests = $(addprefix rv32uf-v-, $(rv32uf_sc_tests))
+
+spike32_tests += $(rv32uf_p_tests) $(rv32uf_v_tests)

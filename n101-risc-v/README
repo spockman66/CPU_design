@@ -1,0 +1,25 @@
+
+███╗   ██╗██╗   ██╗ ██████╗██╗     ███████╗██╗
+████╗  ██║██║   ██║██╔════╝██║     ██╔════╝██║
+██╔██╗ ██║██║   ██║██║     ██║     █████╗  ██║
+██║╚██╗██║██║   ██║██║     ██║     ██╔══╝  ██║
+██║ ╚████║╚██████╔╝╚██████╗███████╗███████╗██║
+╚═╝  ╚═══╝ ╚═════╝  ╚═════╝╚══════╝╚══════╝╚═╝
+
+
+本压缩包(n101_rls_pkg.tar.gz)为芯来科技发布的N101处理器内核IP评估版本，n101_rls_pkg.tar.gz使用方式如下：
+  解压n101_rls_pkg.tar.gz得到n101和n101_cct两个文件夹
+  将key文件解压之后放到n101/configs目录下面
+  在n101/configs下，执行：
+  % source env.sh(env.csh)
+  %./core_gen
+  便可以启动RTL图形化配置界面，退出即可生成RTL，详细的使用方式请参见《Nuclei_N100系列快速集成手册》
+
+此版本具有以下特点：
+1. N101内核为N100系列处理器内核IP的一个可配置版本，有关N100系列内核和N101内核的系统介绍，请参见《Nuclei_N100系列简明数据手册》；
+2. N101内核为N100系列处理器内核IP的一个可配置版本，此版本的默认配置参数请参见RTL生成界面相关信息；
+3. 该评估版的RTL代码经过特殊处理，随机注入了Bug，仅作为评估版本发布，不建议用于正式量产；
+4. 该评估版的RTL代码虽然被随机注入了Bug，但是本版本仍然可仿真、可综合、可用于评估功耗和面积，可烧写至FPGA平台运行dhrystone、coremark、demo_irqc等程序。
+
+注意：
+1.如需要N101的正式版本（无Bug、可用于量产），请致信contact@nucleisys.com申请N101正式版；
