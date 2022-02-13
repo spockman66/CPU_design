@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # CPU_design
 
 ### 介绍
